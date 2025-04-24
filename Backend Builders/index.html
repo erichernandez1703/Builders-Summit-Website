@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                color: #150a0a;
+            }
+        </style>
+      
+        <title>My WEB101 Website</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="icon" type = "image/png" href="img/icon.png">
+    </head>
+    
+    <body>
+        <header class="header-container">
+            <div class ="header-item">
+                <section id = "Home">
+                <img id="header-img" class = "oneimage" src="img/icon.png" alt="Site Logo">
+                </section>
+                <h1>Backend Builders Summit 2025</h1>
+            </div>
+            <div class = "navbar">
+                <nav>
+                    <ul>
+                        <li> <a href = "#Home" > Home </a></li>
+                        <li> <a href = "#about" > About </a></li>
+                        <li> <a href = "#schedule" > Schedule </a></li>
+                        <li> <a href = "#links" > Resources </a></li>
+                        <li><button id="theme-button">Toggle Dark Mode</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <h2> Innovate, Inspire, Impact</h2>
+        <button type="button">Sign Up</button>
+        <button type="button">Check Out Our Schedule</button>
+        
+    
+        <section id = "about" >
+        <h2> About</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdHJPlpL1hI?si=H5MjcsCsrK30m-VL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>The Backend Builders Summit is a premier event designed for developers, engineers, and tech enthusiasts passionate about building scalable, efficient, and secure backend systems. This conference brings together industry leaders, experts, and innovators to explore the latest trends, best practices, and emerging technologies in backend development.
+            From cloud computing and APIs to databases, microservices, and DevOps, the summit covers everything needed to power the backbone of modern applications. Whether you're an experienced backend engineer or just starting out, you'll gain valuable insights through keynote sessions, hands-on workshops, and networking opportunities with like-minded professionals.
+            Join us as we dive deep into the world of high-performance architectures, serverless computing, security, and the future of backend development. Don't miss out on this opportunity to connect, learn, and grow with the best minds in the industry!
+        </p>
+
+        <h3>What to Expect</h3>
+        <ul>
+            <li> <b>Overview:</b> <i>A deep dive into backend development principles and best practices</i></li>
+            <li> <b>Speakers:</b> <i>Industry leaders sharing their insights on cloud computing, microservices, and security</i></li>
+            <li> <b>Workshops:</b> <i>Hands-on sessions with real-world examples for building scalable and secure backend systems</i></li>
+        </ul>
+        </section>
+       
+        <section id = 'schedule'>
+        <h2>Event Schedule</h2>
+        <h3> Friday Backend Trivia</h3>
+        <img alt="Image description" class = "imagetwo" src="img/imagetwoo.png"/>
+        <p>Put your backend knowledge to the test in a fun and competitive trivia night! From database quirks to API design best practices, challenge yourself and your peers with questions covering system architecture, cloud computing, security, and coding history. Whether you're a seasoned backend engineer or just starting out, expect laughs, learning, and maybe even some surprises. Prizes await the top tech trivia masters!</p>
+            
+        
+        <h3>Monday - Backend Vs Api</h3>
+        <img alt = "Image description" class = "imagethree" src = "img/backendvsapi.png" />
+        <p> Explore how artificial intelligence is transforming backend development. From AI-powered database optimizations to automated API generation, this session dives into the intersection of backend systems and machine learning. Are AI-driven backends the future, or will traditional architectures remain dominant? Join the discussion and find out!</p>
+
+        
+        <h3> Tuesday - Database Wars</h3>
+        <img alt="Image description" class = "imagefour" src="img/war.png"/>
+        <p>Dive into the ultimate database showdown! This session explores the strengths, weaknesses, and best use cases for SQL, NoSQL, and NewSQL. Whether you're optimizing for scalability, consistency, or speed, understanding these database paradigms is crucial for backend success. Join the debate and see which database model reigns supreme!</p>
+        </section>
+   
+
+        <section id = 'links' >
+        <h2>Links</h2>
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.geeksforgeeks.org/evolution-of-software-development-history-phases-and-future-trends/">
+            <article>
+                <h3>Read about the history of Software Development</h3>
+                <p>Discusses history, and important events</p>
+            </article>
+        </a>
+
+        <a class="block" href="https://aws.amazon.com/what-is/api/#:~:text=on%20your%20phone.-,What%20does%20API%20stand%20for%3F,of%20service%20between%20two%20applications.">
+            <article>
+                <h3> Learn about Api's Here!</h3>
+                <p>Discover how APIs work, why they’re essential for modern applications, and how to integrate them into your projects.</p>
+            </article>
+        </a>
+        </section>
+        
+
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                     I’m delighted to invite you to the Backend Summit on May 22nd, 2025 at Prudential Center. 
+                     Please RSVP by May 4th, 2025 to secure your spot.
+                     We look forward to hosting you for an inspiring day of deep dives into scalable systems, API design, and cloud infrastructure!
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Eric from New Jersey has RSVP'd.</p>
+                    <p>🎟️ Jackson from New York has RSVP'd.</p>
+                    <p>🎟️ Andrew from California has RSVP'd.</p>
+                </div>
+            </div>
+        
+            <div class="form-container">
+                <form id = "rsvp-form" title = "rsvp-form" >
+                    <input type="text" id="rsvp-name" name="name" placeholder="Name" required>
+                    <input type="text" id="rsvp-home-state" name="home-state" placeholder="Home State" required>
+                    <input type="email" id="rsvp-email" name="email" placeholder="Email" required>                
+                    <button  id="submit-rsvp">Submit RSVP</button>
+                </form>
+            </div>      
+        
+    <script src="index.js"></script>
+
+
+    <div id="success-modal" class="modal" style = "display: none;">
+        <div class="modal-container">
+            <div class ="modal-item">
+                <h3> Fire up your terminal, tighten those endpoints, and get ready to deploy good vibes with the best in backend!</h3>
+            </div>
+            <div class = "modal-item">
+                <img alt="Image description" class = "imagetwo" src="img/rsvpcopy.png"/>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </body>
+</html>

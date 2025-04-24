@@ -1,0 +1,294 @@
+/*** You will not need this file until Unit 3 ***/
+
+html, body {
+    background: var(--bg-color);
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: Tahoma, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: var(--accent-color-light);
+    text-align: center; 
+    text-transform: uppercase; 
+
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+a:link {
+    color: var(--accent-color-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: var(--accent-color-medium);
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:active {
+    color: var(--error-color);
+}
+
+
+a article h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color-darkest);
+}
+
+
+a:hover article h3 {
+    color: blueviolet;
+}
+
+
+
+button {
+    /* Example Style, replace with your own! */
+    background-color: blueviolet;   /* button color */
+    color: white;               /* text color */
+    border: none;               /* hides the default border */
+    padding: 5px 12px;          /* space between button's text and edge */
+    border-radius: 5px;         /* curved edges instead of square */
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: var(--accent-color-medium);
+    transform: scale(1.05);
+}
+
+
+
+
+:root {
+    /* Light Mode Colors */
+    --bg-color: #cfe9ff;
+    --text-color: #06060a;
+    text-align: center;
+
+    /* Dark Mode Colors */
+    --bg-color-dark: #14113b;
+
+    /* Accent Colors */
+    --accent-color-light: #06060a;
+    --accent-color-medium: #0d1035;
+    --accent-color-dark: #0fb2e3;
+    --accent-color-darkest: #131c58;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#header-item:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+#header-item:nth-of-type(2) {
+    text-align: center;
+}
+
+.header-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28eb76;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #22c467; 
+}
+
+
+.imageone {
+    width: 300px;
+    height: auto;
+
+}
+
+.imagetwo {
+    width:300px;
+    height: auto;
+}
+
+.imagethree{
+    width: 300px;
+    height: auto;
+}
+
+.imagefour{
+    width: 300px;
+    height: auto;
+}
+
+.oneimage{
+    width: 300px;
+    height:auto;
+}
+
+
+.navbar ul {
+    z-index: 1000;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a1055;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+.navbar ul li{
+    float: left;
+    margin: 10;
+    align-items: center;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px;
+}
+
+.navbar ul li a:hover {
+    color: #04f7f7;
+}
+
+.dark-mode {
+    background: var(--bg-color-dark);
+    color: white;
+    
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    color: rgb(241, 231, 231);
+}
+
+.dark-mode a:hover * {
+    color: green;
+}
+
+.dark-mode a:link * {
+    color:#06c4fe
+}
+
+body.dark-mode {
+    background: var(--bg-color-dark); 
+    --bg-color: #14113b;
+    margin: 0;
+}
+
+html.dark-mode{
+    background-color: var(--bg-color-dark);
+}
+
+.rsvp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+
+rsvp-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+rsvp-participants{
+    width: 45%;
+    padding-right: 10px;
+}
+
+.modal {
+    display: none;   /* modal should be hidden by default*/
+    position: fixed; /* modal cannot move around the screen */
+    z-index: 2;      /* modal appears above other elements */ 
+    
+    /* TODO: Make the modal fill the entire screen */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    /* Add a semi-transparent background to shadow non-modal elements*/
+    background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+  
+    /* Flexbox settings for modal */
+    /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-container {
+      /* Change modal size and spacing here */
+      padding: 50px;
+      width: 55%;
+  
+    
+      background-color: rgb(0, 195, 255);
+      color: black;
+      text-align: center;
+      font-size: 1rem;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-radius: 15px;
+  }
